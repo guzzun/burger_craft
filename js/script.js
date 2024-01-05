@@ -55,11 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const priceText = option.querySelector('.value').textContent;
             const massText = option.querySelector('.mass').textContent;
     
-            // Încercați să convertiți textul în numere
             const price = parseFloat(priceText);
-            const mass = parseFloat(massText.replace(/\D/g, '')); // Eliminați toate caracterele non-numerice
+            const mass = parseFloat(massText.replace(/\D/g, '')); 
     
-            // Verificați dacă conversia a reușit
             if (!isNaN(price)) {
                 totalPrice += price;
             }
